@@ -56,7 +56,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>LabPlot?</h2>
     </hgroup>
     <article>
-		<p>LabPlot is a KDE-application for interactive graphing and analysis of scientific data. LabPlot provides an easy way to create, manage and edit plots.</p>
+		<p>LabPlot is a KDE-application for interactive graphing and analysis of scientific data. LabPlot provides an easy way to create, manage and edit plots</p>
 		<p>LabPlot was started back in 2001 by Stefan Gerlach</p>
 		<p>More about LabPlot and it's evolution at 
 			<a href="https://dot.kde.org/2009/10/16/labplot-and-scidavis-collaborate-future-free-scientific-plotting">bit.ly/more-labplot</a>
@@ -90,8 +90,8 @@ URL: https://code.google.com/p/io-2012-slides
   	<aside class="note">
       <section>
         <ul>
-          <li>looking through ideas and found cantor in kf5 while labplot in kde4libs</li>
-          <li>Interestedin integration of these two application from user's point of view</li>
+          <li>Worksheet UI in cantor si great</li>
+          <li>Multiple worksheet with different backends plus syntax highlight</li>
         </ul>
         <p><b>notes</b></p>
       </section>
@@ -100,11 +100,36 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>A brief about Cantor</h2>
     </hgroup>
     <article>
-        <p>Cantor is an application that lets you use your favorite mathematical applications from within a nice KDE-integrated Worksheet Interface.</p>
-        <p>Ten backends are curently available: KAlgebra, Lua, Maxima, Octave, Python 2 and 3, Qalculate, R, Sage, and Scilab.</p>
+        <p>Cantor is an application that lets you use your favorite mathematical applications from within a nice KDE-integrated Worksheet Interface</p>
+        <p>Ten backends are curently available: KAlgebra, Lua, Maxima, Octave, Python 2 and 3, Qalculate, R, Sage, and Scilab</p>
     </article>
     <article class="centered">
     	<img src="images/cantor-full_small.png">
+    </article>
+  </slide>
+
+  <slide>
+  	<aside class="note">
+      <section>
+        <ul>
+          <li>For example, the user creates a Maxima-session in LabPlot and performs some calculations leading to some arrays or lists. These arrays/lists need to be exposed from Cantor to LabPlot. Then, the user can select the Maxima-session and one of its children (array/list with the actual data) as the source for x- or y-data for plotting the graph.</li>
+          <li>Static plotting inside cantor</li>
+        </ul>
+        <p><b>notes</b></p>
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Motivation behind the idea</h2>
+    </hgroup>
+    <article>
+        <p>Having compatibility of scripting in LabPlot</p>
+        <p>Writing scripts to modify data inside labPlot to try different type of plots on same data</p>
+        <p>Cantor lacking a good plotting extensibility</p>
+        <p>Scientific users do like to play with data before plotting them</p>
+        <p><b>Basic Idea:</b></p>
+        <p class="green">
+        	Create a session --> modify data --> export variables to LabPlot --> Plot and play with variables
+        </p>
     </article>
   </slide>
 
