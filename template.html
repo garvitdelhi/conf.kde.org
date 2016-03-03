@@ -21,6 +21,7 @@ URL: https://code.google.com/p/io-2012-slides
   <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
   <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+  <script data-main="js/slides" src="js/jquery-1.10.2.js"></script>
 </head>
 <body style="opacity: 0">
 
@@ -81,7 +82,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>How am I associated with it?</h2>
     </hgroup>
     <article>
-      	<p>Ported LabPlot from KDE4Libs(Qt4 based) to KF5(Qt5 based)</p>
+      	<p>Ported LabPlot from KDElibs4(Qt4 based) to KF5(Qt5 based)</p>
         <p>Participated in GSOC 2015 on Project <b>Integration of LabPlot with Cantor</b></p>
     </article>
   </slide>
@@ -119,7 +120,7 @@ URL: https://code.google.com/p/io-2012-slides
       </section>
     </aside>
     <hgroup>
-      <h2>Motivation behind the idea</h2>
+      <h2>Motivation behind the it?</h2>
     </hgroup>
     <article>
         <p>Having compatibility of scripting in LabPlot</p>
@@ -135,316 +136,127 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>A list where items build:</p>
-      <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
-      </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide hidden>
-    Hidden slides are left out of the presentation.
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-// Say hello world until the user starts questioning
-// the meaningfulness of their existence.
-function helloWorld(world) {
-  for (var i = 42; --i &gt;= 0;) {
-    alert('Hello ' + String(world));
-  }
-}
-</pre>
-<pre class="prettyprint" data-lang="css">
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-&lt;/style&gt;
-</pre>
-<pre class="prettyprint" data-lang="html">
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>My Awesome Page&lt;/title>
-&lt;/head>
-&lt;body>
-  &lt;p&gt;Hello world&lt;/p&gt;
-&lt;body>
-&lt;/html>
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Slide with Speaker Notes</h2>
-    </hgroup>
-    <article>
-      <p>Press 'p' to toggle speaker notes.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Presenter Mode</h2>
-    </hgroup>
-    <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image</h2>
-    </hgroup>
-    <article>
-      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
+      <h2>Before</h2>
     </hgroup>
     <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
+        <img src="images/labplot_before.jpg">
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>After</h2>
     </hgroup>
-    <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
+    <!-- <article class="flexbox vcenter"> -->
+        <img src="images/labplot_menu.png">
+    <!-- </article> -->
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Example</h2>
     </hgroup>
-    <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
+    <!-- <article class="flexbox vcenter"> -->
+        <img src="images/python_session.png">
+    <!-- </article> -->
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
+      <h2>Example</h2>
     </hgroup>
-    <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
+    <!-- <article class="flexbox vcenter"> -->
+        <img src="images/python_script.png">
+    <!-- </article> -->
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide Styles</h2>
+      <h2>Example</h2>
     </hgroup>
-    <article class="smaller">
-      <div class="columns-2">
+    <!-- <article class="flexbox vcenter"> -->
+        <img src="images/python_plot.png">
+    <!-- </article> -->
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+        <h2>Demonstration</h2>
+    </article>
+  </slide>
+
+  <slide>
+  	<aside class="note">
+      <section>
         <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
+          <li>FITS is an open standard widely used in the astronomy</li>
+          <li>During GSoC2015 basic 3D-functionality was added</li>
         </ul>
+        <p><b>notes</b></p>
+      </section>
+    </aside>
+    <hgroup>
+      <h2>Other Improvements that happened in 2015</h2>
+    </hgroup>
+    <article>
+        <p>Minh Ngo added <b>visualization of 3D-data</b> to LabPlot by utilizing the very powerful library VTK</p>
+        <p>Different data source sources are supported - external files with 3D-data, LabPlot's spreadsheets with column-based organisation of data and LabPlot's matrices with matrix-like data structure. The data can be visualized as points in 3D-space, curves and surfaces</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Other Improvements that happened in 2015</h2>
+    </hgroup>
+    <article class="vcenter">
+        <img src="images/3D_plotting.png">
+    </article>
+  </slide>
+
+  <slide>
+  	<aside class="note">
+      <section>
         <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
+          <li>FITS is an open standard widely used in the astronomy</li>
+          <li>During GSoC2015 basic 3D-functionality was added</li>
         </ul>
-      </div>
-      <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
-      </div>
-    </article>
-  </slide>
-
-  <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/kde_logo_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
+        <p><b>notes</b></p>
+      </section>
+    </aside>
     <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
+      <h2>Other Improvements that happened in 2015</h2>
     </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
-  </slide>
-
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/kde_logo_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <q>
-        This is an example of quote text.
-      </q>
-      <div class="author">
-        Name<br>
-        Company
-      </div>
+    <article>
+        <p>Ankit Wagarde added a very useful tool to LabPlot that allows to extract data from images - the <b>Datapicker</b></p>
+        <p>After import of an image and setting the reference points, the user start to select the data points on the image that get automatically converted into numbers. Those numbers can be used in your own plots</p>
     </article>
   </slide>
 
   <slide>
+  	<aside class="note">
+      <section>
+        <ul>
+          <li>FITS is an open standard widely used in the astronomy</li>
+          <li>During GSoC2015 basic 3D-functionality was added</li>
+        </ul>
+        <p><b>notes</b></p>
+      </section>
+    </aside>
     <hgroup>
-      <h2>Slide with Iframe</h2>
+      <h2>Future?</h2>
     </hgroup>
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
+        <p>Listening for cantor plot events and then plotting it inside labplot</p>
+        <p>Add support for FITS format in LabPlot</p>
+        <p>Extend 3D Plotting part using VTK library</p>
+        <p>Import data from SQL-Databases</p>
+        <p>Theme manager for LabPlot</p>
     </article>
   </slide>
 
   <slide>
-    <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
+    <article class="flexbox vcenter">
+        <h2>Questions?</h2>
     </article>
   </slide>
 
@@ -461,7 +273,7 @@ function helloWorld(world) {
 
   <slide class="logoslide dark nobackground">
     <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo_white.png"></span>
+      <span><img src="images/kde_logo.png"></span>
     </article>
   </slide>
 
@@ -470,6 +282,19 @@ function helloWorld(world) {
 </slides>
 
 <script>
+
+$(document).on("contextmenu", document, function(e){
+   return false;
+});
+
+$(document).mousedown(function(e) {
+	if(e.which == 1) {
+		window.slidedeck.nextSlide();
+	} else {
+		window.slidedeck.prevSlide();
+	}
+});
+
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
 _gaq.push(['_trackPageview']);
@@ -479,6 +304,9 @@ _gaq.push(['_trackPageview']);
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+
+
+
 </script>
 
 <!--[if IE]>
